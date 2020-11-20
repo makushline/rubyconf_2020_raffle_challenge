@@ -45,6 +45,8 @@ Digest::SHA512.base64digest("abc")
 ## Some Solutions
 * Ractor based solution that I came up with. Ractors are Ruby's new concurrency primitive (meant to replace Threads).
   https://github.com/makushline/rubyconf_2020_raffle_challenge/blob/main/ractor_miner.rb
+* Ractor based solution by [@sambostock](https://github.com/sambostock)
+https://gist.github.com/sambostock/c82d5bdde99a22482f97fdffa9591f7a
 * Single line solution:  
   `ruby -rdigest -e"i,h=ARGV;p [*?a..?z,*0..9].repeated_permutation(5).find{Digest::MD5.base64digest([i,*_1]*'')==h}"`
   which accepts `id` and `digest` as arguments. Example:  
