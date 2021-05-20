@@ -1,5 +1,5 @@
 I ran a programming challenge at RubyConf 2020. The basic premise was: 
-- I gave got some id from contestants (url, pgp key, email etc)
+- I got some string id from contestants (url, pgp key, email etc)
 - I concatenated the id with a raffle number and generated a digest.
 - I then shared the digest back with the contestants.
 
@@ -20,7 +20,7 @@ I gave some hints which contestants had to opt in to.
 The problem boils down to generating the entire set of 5 character permutations from our alphabet and testing those using the generate hash method.
 
 ### Hint 2
-We are using one of the follow hashing algorithms
+We are using one of the following hashing algorithms
 
 ```
 Digest.constants
